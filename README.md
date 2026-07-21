@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Family Calendar
 
-## Getting Started
+家族の予定を共有するために開発したカレンダーアプリです。
 
-First, run the development server:
+妻の勤務予定や子どもの学校行事など、家族全員の予定をひとつのカレンダーで管理できるようにしたいという思いから開発しました。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+このアプリは、薬剤師からフルスタックエンジニアへの転職を目指す個人開発プロジェクトとして制作しています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ デモ
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vercel公開後に追加予定
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 スクリーンショット
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+（後で追加予定）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 主な機能
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 📅 予定の追加
+- ✏️ 予定の編集
+- 🗑️ 予定の削除
+- 💾 LocalStorageによるデータ保存
+- 👨‍👩‍👧‍👦 担当者ごとの色分け
+- 🔍 家族フィルター
+- 🇯🇵 日本語対応カレンダー
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 使用技術
+
+| 分類 | 技術 |
+|------|------|
+| Framework | Next.js |
+| Language | TypeScript |
+| Library | React |
+| Calendar | react-big-calendar |
+| Date Library | moment.js |
+| Storage | LocalStorage |
+| Version Control | Git / GitHub |
+
+---
+
+## 開発背景
+
+家族で予定を共有する際、妻の勤務予定や子どもの予定を一目で確認できるアプリが欲しいと考え、このアプリを開発しました。
+
+実際の生活で使うことを想定しながら機能を追加し、Reactの状態管理やデータ保存、UI設計などを学びました。
+
+---
+
+## 今後追加予定
+
+- Firebaseによるクラウド保存
+- ログイン機能
+- レスポンシブ対応
+- 担当者の追加・削除機能
+- ドラッグ＆ドロップによる予定変更
+- 通知機能
+
+---
+
+## 開発環境
+
+- Node.js
+- npm
+- VS Code
+- Git
+- GitHub
+
+---
+
+## 作者
+
+**pharma2tech**
+
+Pharmacist → Future Full Stack Engineer
+
+GitHub
+https://github.com/pharma2tech
