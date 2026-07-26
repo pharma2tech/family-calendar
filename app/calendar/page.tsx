@@ -144,9 +144,11 @@ export default function Home() {
   //日付選択
   //====================
 
-const handleSelectSlot = ({ start, end }) => {
-  setSelectedSlot({ start, end });     //選択した日付を保存
-};
+  //カレンダーの日付がクリックされたときの処理
+  //選択した開始日と終了日をselectedSlotに保存する
+  const handleSelectSlot = ({ start, end }: SelectedSlot) => {
+    setSelectedSlot({ start, end });     //選択した日付を保存
+  };
 
   //====================
   //予定クリック
