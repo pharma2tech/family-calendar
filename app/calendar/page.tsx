@@ -21,6 +21,26 @@ moment.locale("ja");
 //react-big-calendarでmomentを利用する設定
 const localizer = momentLocalizer(moment);
 
+//====================
+//型定義（TypeScript）
+//====================
+
+//カレンダーに登録する予定のデータ構造
+//「予定」は必ず以下の4つの情報を持つ
+type CalendarEvent = {
+  title: string; //予定名
+  start: Date; //開始日時
+  end: Date; //終了日時
+  person: string; //担当者（自分・妻など）
+};
+
+//カレンダーで選択した日付範囲のデータ構造
+//日付をクリックしたときやドラッグで範囲選択したときに使用する
+type SelectedSlot = {
+  start: Date; //選択開始日時
+  end: Date; //選択終了日時
+};
+
 export default function Home() {
 
   //===========================
@@ -64,7 +84,7 @@ export default function Home() {
   ];
 
   //カレンダーの予定一覧を保存
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<CalendarEvent[]>([]);
   
   //入力フォームの予定名
   const [title, setTitle] = useState("");
@@ -73,13 +93,13 @@ export default function Home() {
   const [person, setPerson] = useState("自分");
   
   //選択中の日付
-  const [selectedSlot, setSelectedSlot] = useState(null);
+  const [selectedSlot, setSelectedSlot] = useState<SelectedSlot | null>(null);
   
   //編集中の予定
-  const [editingEvent, setEditingEvent] = useState(null);
+  const [editingEvent, setEditingEvent] = useState<CalendarEvent | null>(null);
   
   //クリックされた予定
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedEvent, setSelectedEvent] = useState<CalendarEvent | null>(null);
 
   //表示する家族
   const [visiblePersons, setVisiblePersons] = useState(
