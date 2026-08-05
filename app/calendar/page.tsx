@@ -120,7 +120,7 @@ export default function Home() {
       //start/endをData型へ戻す
   
       setEvents(
-        parsedEvents.map((event: any) => ({
+        parsedEvents.map((event: CalendarEvent) => ({  //localStorageから読み込んだ文字列データをCalendarEvent型の予定データへ変換する
           ...event,
           start: new Date(event.start),
           end: new Date(event.end),
@@ -154,9 +154,11 @@ export default function Home() {
   //予定クリック
   //====================
 
-const handleSelectEvent = (event) => {
-        setSelectedEvent(event);     //選択した予定を保存
-      };
+  // カレンダーの予定をクリックしたときの処理
+  // クリックした予定を selectedEvent に保存する
+  const handleSelectEvent = (event: CalecdarEvent) => {
+    setSelectedEvent(event);     //選択した予定を保存
+  };
   
 
   //====================
@@ -179,7 +181,7 @@ const handleSelectEvent = (event) => {
     if (!selectedEvent) return;     //予定未選択なら終了
 
     if (confirm("この予定を削除しますか？")) {
-      setEvents(events.filter((e) => e !== selectedEvent));     //選択中の予定以外を残す
+      setEvents(events.filter((e: CalendarEvent) => e !== selectedEvent));     //削除する予定以外を残して新しい予定一覧を作成する
       setSelectedEvent(null);     //選択状態削除
     }
   };
@@ -218,7 +220,7 @@ const handleSelectEvent = (event) => {
   //予定の色分け
   //====================
 
-  const eventStyleGetter = (event) => {
+  const eventStyleGetter = (event: CalendarEvent) => {
     // 担当者情報を取得
     const personInfo = persons.find(
       (person) => person.name === event.person
@@ -245,7 +247,7 @@ const handleSelectEvent = (event) => {
   : null;
 
   // フィルター後の予定一覧
-  const filteredEvents = events.filter((event) =>
+  const filteredEvents = events.filter((event: CalendarEvent) =>  //フィルターで選択されている担当者の予定だけ表示する
   visiblePersons.includes(event.person)
   );
 
@@ -350,7 +352,7 @@ const handleSelectEvent = (event) => {
 
       if (editingEvent) {
         setEvents(
-          events.map((e) =>
+          events.map((e: CalendarEvent) => //編集中の予定だけ内容を更新する
             e === editingEvent
               ? {
                   ...e,
