@@ -156,7 +156,7 @@ export default function Home() {
 
   // カレンダーの予定をクリックしたときの処理
   // クリックした予定を selectedEvent に保存する
-  const handleSelectEvent = (event: CalecdarEvent) => {
+  const handleSelectEvent = (event: CalendarEvent) => {
     setSelectedEvent(event);     //選択した予定を保存
   };
   
@@ -312,7 +312,7 @@ export default function Home() {
       border: "1px solid #ddd",
       borderRadius: "8px",
       fontSize: "16px",
-      miniWidht: "250px",
+      minWidth: "250px",
     }}
   />
   
@@ -369,8 +369,8 @@ export default function Home() {
       ...events,
       {
         title,
-        start: selectedSlot.start,
-        end: selectedSlot.end,
+        start: selectedSlot!.start,
+        end: selectedSlot!.end,
         person,
       },
     ]);
