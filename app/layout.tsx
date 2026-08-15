@@ -87,7 +87,7 @@ export default function RootLayout({
                 BLOG
               </Link>
 
-              <Link 
+              <a
                 href="/calendar"
                 style={{
                   color: "white",
@@ -95,7 +95,7 @@ export default function RootLayout({
                 }}
               >
                 APP
-              </Link>
+              </a>
             </nav>
           </div>
         </header>

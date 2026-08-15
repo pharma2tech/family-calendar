@@ -99,6 +99,63 @@ export default function BlogPage() {
             </div>
           </div>
         </Link>
+      
+        <Link
+          href="/blog/article2"
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "white",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+              marginBottom: "32px",
+              transition: "0.2s",
+            }}
+          >
+
+            <div style={{ padding: "24px" }}>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "14px",
+                  marginBottom: "10px",
+                }}
+              >
+                2026.08.15
+              </p>
+
+              <h2
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "16px",
+                  lineHeight: "1.5",
+                  color: "#111",
+                }}
+              >
+                アラフォー薬剤師がAIに頼りながら家族カレンダーを作ってみた｜
+                3か月の開発で何が変わったのか        
+              </h2>
+              
+              <p
+                style={{
+                  color: "#555",
+                  lineHeight: "1.8",
+                }}
+              >
+                AIにかなり頼りながら家族カレンダーWebアプリを約3か月かけて開発。
+                最初はコードの意味も十分に理解しないまま進めていたが、
+                Vercelへの公開まで経験したことで、少しずつ技術への理解も深まってきた。
+              </p>
+              
+            </div>
+          </div>
+        </Link>
+      
       </div>
     </div>
   );
