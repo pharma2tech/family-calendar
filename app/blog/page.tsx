@@ -156,6 +156,61 @@ export default function BlogPage() {
           </div>
         </Link>
       
+         <Link
+          href="/blog/article3"
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "white",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+              marginBottom: "32px",
+              transition: "0.2s",
+            }}
+          >
+
+            <div style={{ padding: "24px" }}>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "14px",
+                  marginBottom: "10px",
+                }}
+              >
+                2026.08.16
+              </p>
+
+              <h2
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "16px",
+                  lineHeight: "1.5",
+                  color: "#111",
+                }}
+              >
+                アラフォー薬剤師がAIと一緒にWebアプリの要件定義をやってみた      
+              </h2>
+              
+              <p
+                style={{
+                  color: "#555",
+                  lineHeight: "1.8",
+                }}
+              >
+              「家族の予定を共有できるカレンダーが欲しい」という
+               漠然としたアイデアをもとにAIと壁打ち。
+               無料でできる範囲で「何をつくるか」決めていった。
+              </p>
+              
+            </div>
+          </div>
+        </Link>
+
       </div>
     </div>
   );
