@@ -38,7 +38,7 @@ export default function BlogPage() {
         </p>
 
         <Link
-          href="/blog/article1"
+          href='/blog/article1'
           style={{
             textDecoration: "none",
             color: "inherit",
@@ -55,7 +55,7 @@ export default function BlogPage() {
             }}
           >
             <img
-              src="/calender1.png"
+              src='/calender1.png'
               style={{
                 width: "100%",
                 display: "block",
@@ -93,15 +93,14 @@ export default function BlogPage() {
               >
                 未経験からNext.jsとChatGPTを使って、
                 家族用カレンダーアプリを作った記録。
-                npmエラーやPowerShell地獄を越えながら、
-                初めての個人開発に挑戦。
+                npmエラーやPowerShell地獄を越えながら、 初めての個人開発に挑戦。
               </p>
             </div>
           </div>
         </Link>
-      
+
         <Link
-          href="/blog/article2"
+          href='/blog/article2'
           style={{
             textDecoration: "none",
             color: "inherit",
@@ -117,7 +116,6 @@ export default function BlogPage() {
               transition: "0.2s",
             }}
           >
-
             <div style={{ padding: "24px" }}>
               <p
                 style={{
@@ -138,9 +136,9 @@ export default function BlogPage() {
                 }}
               >
                 アラフォー薬剤師がAIに頼りながら家族カレンダーを作ってみた｜
-                3か月の開発で何が変わったのか        
+                3か月の開発で何が変わったのか
               </h2>
-              
+
               <p
                 style={{
                   color: "#555",
@@ -151,13 +149,12 @@ export default function BlogPage() {
                 最初はコードの意味も十分に理解しないまま進めていたが、
                 Vercelへの公開まで経験したことで、少しずつ技術への理解も深まってきた。
               </p>
-              
             </div>
           </div>
         </Link>
-      
-         <Link
-          href="/blog/article3"
+
+        <Link
+          href='/blog/article3'
           style={{
             textDecoration: "none",
             color: "inherit",
@@ -173,7 +170,6 @@ export default function BlogPage() {
               transition: "0.2s",
             }}
           >
-
             <div style={{ padding: "24px" }}>
               <p
                 style={{
@@ -182,7 +178,7 @@ export default function BlogPage() {
                   marginBottom: "10px",
                 }}
               >
-                2026.08.16
+                2026.09.13
               </p>
 
               <h2
@@ -193,24 +189,22 @@ export default function BlogPage() {
                   color: "#111",
                 }}
               >
-                アラフォー薬剤師がAIと一緒にWebアプリの要件定義をやってみた      
+                アラフォー薬剤師がAIと一緒にWebアプリの要件定義をやってみた
               </h2>
-              
+
               <p
                 style={{
                   color: "#555",
                   lineHeight: "1.8",
                 }}
               >
-              「家族の予定を共有できるカレンダーが欲しい」という
-               漠然としたアイデアをもとにAIと壁打ち。
-               無料でできる範囲で「何をつくるか」決めていった。
+                「家族の予定を共有できるカレンダーが欲しい」という
+                漠然としたアイデアをもとにAIと壁打ち。
+                無料でできる範囲で「何をつくるか」決めていった。
               </p>
-              
             </div>
           </div>
         </Link>
-
       </div>
     </div>
   );
